@@ -9,4 +9,8 @@
 
     </style>
 
+    <style name="Toolbar" parent="Theme.AppCompat.NoActionBar">
+
+    </style>
+
 </resources>

@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.CadastroActivity"></activity>
+        <activity
+            android:name=".activity.AjusteActivity"
+            android:parentActivityName=".activity.MainActivity">
+
+        </activity>
+        <activity android:name=".activity.CadastroActivity" />
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.LoginActivity">
             <intent-filter>
