@@ -14,8 +14,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circleImagemViewFotoPerfil"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
         android:layout_marginBottom="16dp"
         android:src="@drawable/padrao"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/circleImagemViewFotoPerfil">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/editTextNomeUsuarioAjuste"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -57,7 +57,7 @@
             android:text="@string/usuario_text" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imageViewSalvaNome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -82,5 +82,30 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/circleImagemViewFotoPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonGaleria"
+        app:layout_constraintTop_toTopOf="@+id/circleImagemViewFotoPerfil"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="@drawable/ic_camera_cinza_24dp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonGaleria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/circleImagemViewFotoPerfil"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonCamera"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/circleImagemViewFotoPerfil"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="@drawable/ic_photo_cinza_24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,4 +14,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_ajuste">Esse não é o seu nome de usuário nem sua senha. Esse nome ficara visivel para seus contatos no WhatsApp</string>
     <string name="usuario_text">Nome do usuário</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_grupo">GrupoActivity</string>
+    <string name="title_activity_cadastra_grupo">CadastraGrupoActivity</string>
+    <string name="nome_grupo">Nome do grupo</string>
+    <string name="padrao_grupo">Defina um nome e uma imagem opcional para o grupo</string>
 </resources>

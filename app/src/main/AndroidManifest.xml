@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jvapp.whatsappclone">
 
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,10 +17,35 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activity.AjusteActivity"
-            android:parentActivityName=".activity.MainActivity">
-
+            android:name=".activity.CadastraGrupoActivity"
+            android:label="@string/title_activity_cadastra_grupo"
+            android:parentActivityName=".activity.GrupoActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jvapp.whatsappclone.activity.GrupoActivity" />
         </activity>
+        <activity
+            android:name=".activity.GrupoActivity"
+            android:label="@string/title_activity_grupo"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jvapp.whatsappclone.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jvapp.whatsappclone.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AjusteActivity"
+            android:parentActivityName=".activity.MainActivity" />
         <activity android:name=".activity.CadastroActivity" />
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.LoginActivity">
